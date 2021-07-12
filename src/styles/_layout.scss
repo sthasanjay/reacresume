@@ -18,5 +18,10 @@
                 margin: 5rem 15rem;
          
         }
+
+        @media screen and (max-width: 1000px){
+            margin-left: 0;
+            width: 100%;
+        }
     }
 }
