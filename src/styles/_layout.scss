@@ -4,6 +4,29 @@
         height: 100vh;
         position: fixed;
         background-color: #191D2B;
+        z-index: 3;
+      
+        transform-origin: left;
+        @media screen and (max-width:1000px){
+            transform: translateX(-100%);
+            transition: all .4s ease-in-out;
+        }
+        
+    }
+   
+
+
+    .nav-toggle{
+        @media screen and (max-width:1000px){
+            transition: all .4s ease-in-out;
+            transform: translateX(0);
+            width: 30%;
+        }
+        @media screen and (max-width:411px){
+            transition: all .4s ease-in-out;
+            transform: translateX(0);
+            width: 50%;
+        }
     }
 
     .main-content{
@@ -16,6 +39,8 @@
         
             .inner-content{
                 margin: 5rem 15rem;
+
+               
          
         }
 
@@ -25,3 +50,83 @@
         }
     }
 }
+
+.nav-btn{
+    position: absolute;
+    z-index: 1;
+    right: 10%;
+    top: 5%;
+    width: 3rem;
+    height: 4rem;
+ 
+    display: none;
+   
+    @media screen and (max-width:960px) {
+        right: 7.5%;
+        top: 4.5%;
+        
+    }
+    @media screen and (max-width:768px) {
+        right: 6%;
+        top: 3%;
+        
+    }
+    align-items: center;
+    .line-1, .line-2, .line-3{
+        height: .4rem;
+        width: 100%;
+        background-color: #3858cc;
+        pointer-events: none;
+        border-radius: 20px;
+        &:not(:last-child){
+            margin-bottom: .5rem;
+        }
+    }
+  
+        
+    }
+   
+
+    @media screen and (max-width:1000px){
+        .nav-btn{
+            display: block;
+            
+            
+        }
+        .line-1, .line-2, .line-3{
+            display: block;
+        }
+    }
+
+
+    @media screen and (max-width:1400px) {
+        .inner-content{
+            margin: 4rem 12rem !important;
+        }
+        
+    }
+    @media screen and (max-width:1000px) {
+        .inner-content{
+            margin: 3rem 11rem !important;
+        }
+        
+    }
+
+    @media screen and (max-width:768px) {
+        .inner-content{
+            margin: 2rem 10rem !important;
+        }
+        
+    }
+    @media screen and (max-width:660px) {
+        .inner-content{
+            margin: 1rem 7rem !important;
+        }
+        
+    }
+    @media screen and (max-width:500px) {
+        .inner-content{
+            margin: 0.7rem 5rem !important;
+        }
+        
+    }

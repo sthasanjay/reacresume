@@ -11,6 +11,11 @@
          &:hover{
             border-top: 8px solid #037FFF;
          }
+
+         @media screen and (max-width:768px) {
+             width: 100%;
+             
+         }
         
        
 
@@ -41,4 +46,19 @@
     display: flex;
     justify-content: space-between;
     margin-top: 4rem;
+    @media screen and (max-width:996px) {
+
+        display: grid;
+        grid-template-columns:repeat(1, 1fr) ;
+        grid-row-gap: 1rem;
+        
+    }
+
+    @media screen and (max-width:768px) {
+
+        display: grid;
+        grid-template-columns:repeat(1, 1fr) ;
+        grid-row-gap: 1rem;
+        
+    }
 }
