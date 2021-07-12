@@ -19,5 +19,33 @@
     text-align: start;
 }
 
+.icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem 0;
+   
+    .icon-holder{
+        margin-right: 1rem;
+        transition: 1s all ease-in-out;
+        .icon{
+            font-size: 2.4rem;
+            color:#a4acc4;
+        }
+       .fb:hover{
+            transition: 1s ease-in-out;
+           color:blue;
+       }
+       .in:hover{
+        transition: 1s ease-in-out;
+        color:red;
+       }
+       .Lk:hover{
+        transition: 1s ease-in-out;
+        color:rgb(110, 87, 87);
+       }
+    }
+}
+
 
 }
